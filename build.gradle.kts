@@ -12,6 +12,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+
+//    lets plot
+    implementation ("org.jetbrains.lets-plot:lets-plot-common:3.0.0")
+    implementation ("org.jetbrains.lets-plot:lets-plot-kotlin-jvm:4.2.0")
 }
 
 tasks.test {
@@ -19,7 +23,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(17)
 }
 
 application {
